@@ -1,0 +1,27 @@
+{
+    "name": "jwelmac/bit6-api-backend-php",
+    "description": "Bit6 Backend API PHP Library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+      {
+        "name": "Jermaine McFarlane",
+        "email": "j.mcfarlane.mbbs@gmail.com"
+      }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Bit6": "src/"
+        }
+    },
+    "require": {
+    },
+    "require-dev": {
+          "squizlabs/php_codesniffer": "2.*",
+          "phpunit/phpunit": "^5.4"
+    },
+    "scripts": {
+        "sniff" : "vendor/bin/phpcs --standard=PSR2 --extensions=php src tests",
+        "fix": "vendor/bin/phpcbf --standard=PSR2 --extensions=php src tests"
+    }
+}

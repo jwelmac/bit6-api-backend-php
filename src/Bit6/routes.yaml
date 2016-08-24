@@ -1,0 +1,3 @@
+dev: https://api.b6dev.net
+prod: https://api.bit6.com
+backend: http://docs.bit6.com/api/rest/backend.yaml 
