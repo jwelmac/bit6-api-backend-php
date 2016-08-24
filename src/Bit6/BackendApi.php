@@ -3,7 +3,7 @@
 namespace Bit6;
 
 use \Httpful\Request;
-use Symfony\Component\Yaml\Yaml;
+use \Symfony\Component\Yaml\Yaml;
 
 class BackendApi
 {
