@@ -9,7 +9,7 @@ class BackendApi
 {
     private $base_url;
     private $routes;
-    private $paths;
+    public $paths;
 
     /**
     * Construct new class object
@@ -34,7 +34,7 @@ class BackendApi
 
         // Set the paths to query
         $backend = Yaml::parse(file_get_contents($this->routes['backend']));
-        $this->paths = $backend['paths'];
+        $this->paths = array_keys($backend['paths']);
     }
 
     /**
@@ -48,6 +48,7 @@ class BackendApi
 
     /**
     * Get a user uid
+    * @codeCoverageIgnore
     */
     private function getUID($usr)
     {
